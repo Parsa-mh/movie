@@ -1,0 +1,79 @@
+@font-face {
+    font-family: vazir;
+    src: url(../assets/fonts/Vazir.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: vazir;
+}
+body {
+    background-color: #10141f;
+    padding: 5px;
+    .navbar{
+        width: 80px;
+        margin: 0 0 0 15px;
+        background-color: #161d2f;
+        height: calc(100vh - 20px);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .logo{
+            margin: 15px 0 0 0;
+        }
+        .side-items-parent{
+            flex-grow: 1;
+            .side-items {
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    align-items: center;
+                }
+        }
+        .profile{
+            width: 40px;
+            img{
+                width: 100%;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+        }
+    }
+    .search-box{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 25px;
+        .search-input{
+            width: 100%;
+            height: 35px;
+            outline: none;
+            border: none;
+            border-radius: 50px;
+            background-color: #10141f;
+            padding: 0 10px;
+            display: flex;
+            font-size: 17px;
+            align-items: center;
+            &::placeholder{
+                font-size: 22px;
+                transform: translateY(5px);
+            }
+        }
+    }
+}
+.container{
+    width: calc(100% - 120px);
+    margin: 0 0 0 auto;
+}
